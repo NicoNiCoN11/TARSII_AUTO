@@ -35,7 +35,7 @@ output_dir = sys.argv[2]  # 命令行第二个参数输入输出文件路径
 # 获取输入数据目录下的所有文件名
 file_list = os.listdir(data_dir)
 # 过滤掉格式不对的文件
-data_list = [file for file in file_list if file.endswith(".wig") or file.endswith(".sam")]
+data_list = [file for file in file_list if file.endswith(".txt") or file.endswith(".sam")]
 # 整理文件从而保证后续分析按顺序进行
 data_list = sorted(data_list)
 for file in data_list:
