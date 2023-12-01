@@ -123,3 +123,4 @@ for file in parental_list:
         print("no such file in the path")
 subprocess.run(["sh", "TARSII_step3_germline_DMR.sh", "-p",
                 f"{pat_path}", "-m", f"{mat_path}", "-b", f"{input_bed}", "-o", f"{output_dir}"])
+print("All missions done! please check the", f"{output_dir}")
